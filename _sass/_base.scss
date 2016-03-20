@@ -1,0 +1,259 @@
+/**
+* Icon fonts
+*/
+@font-face {
+    font-family: 'icomoon';
+    src:    url('/fonts/icomoon.eot?x770or');
+    src:    url('/fonts/icomoon.eot?x770or#iefix') format('embedded-opentype'),
+        url('/fonts/icomoon.ttf?x770or') format('truetype'),
+        url('/fonts/icomoon.woff?x770or') format('woff'),
+        url('/fonts/icomoon.svg?x770or#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/**
+ * Reset some basic elements
+ */
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, ul, figure {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/**
+ * Basic styling
+ */
+body {
+    font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
+    color: $text-color;
+    background-color: $background-color;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-feature-settings: "kern" 1;
+    -moz-font-feature-settings: "kern" 1;
+    -o-font-feature-settings: "kern" 1;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
+    overflow: hidden;
+}
+
+
+
+/**
+ * Set `margin-bottom` to maintain vertical rhythm
+ */
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+ul, ol, dl, figure,
+%vertical-rhythm {
+    margin-bottom: $spacing-unit / 2;
+}
+
+
+
+/**
+ * Images
+ */
+img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+
+
+/**
+ * Figures
+ */
+figure > img {
+    display: block;
+}
+
+figcaption {
+    font-size: $small-font-size;
+}
+
+
+
+/**
+ * Lists
+ */
+ul, ol {
+    margin-left: $spacing-unit;
+}
+
+li {
+    > ul,
+    > ol {
+         margin-bottom: 0;
+    }
+}
+
+
+
+/**
+ * Headings
+ */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: $base-font-weight;
+}
+
+
+
+/**
+ * Links
+ */
+a {
+    color: $brand-color;
+    text-decoration: none;
+
+    &:visited {
+        color: $brand-color;
+    }
+
+    &:hover {
+        color: darken($brand-color, 15%);
+        text-decoration: underline;
+    }
+}
+
+
+/**
+*selection
+*/
+::selection{
+    color: darken($brand-color, 15%);
+    background-color: rgba($brand-color, .3)
+}
+
+/**
+ * Blockquotes
+ */
+blockquote {
+    color: $grey-color;
+    border-left: 4px solid $grey-color-light;
+    padding-left: $spacing-unit / 2;
+    font-size: 18px;
+    letter-spacing: -1px;
+    font-style: italic;
+
+    > :last-child {
+        margin-bottom: 0;
+    }
+}
+
+
+
+/**
+ * Code formatting
+ */
+pre,
+code {
+    font-family: Consolas, "Lucida Console", Monaco, monospace;
+    font-size: 15px;
+    border: 1px solid $grey-color-light;
+    border-radius: 3px;
+    background-color: #eef;
+}
+
+code {
+    padding: 1px 5px;
+}
+
+pre {
+    padding: 8px 12px;
+    overflow-x: auto;
+
+    > code {
+        border: 0;
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
+
+
+/**
+ * Clearfix
+ */
+%clearfix {
+
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+
+
+/**
+ * Icons
+ */
+
+.icon {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-demo:before {
+    content: "\f01c";
+}
+.icon-setting:before {
+    content: "\f013";
+}
+.icon-home:before {
+    content: "\f015";
+}
+.icon-chevron-left:before {
+    content: "\f053";
+}
+.icon-chevron-right:before {
+    content: "\f054";
+}
+.icon-heart:before {
+    content: "\f004";
+    font-size: 0.9em;
+}
+.icon-top:before {
+    content: "\f062";
+}
+.icon-fullscreen:before {
+    content: "\f065";
+}
+.icon-exitfullscreen:before {
+    content: "\f066";
+}
+.icon-twitter:before {
+    content: "\f081";
+}
+.icon-github:before {
+    content: "\f092";
+}
+.icon-quote-left:before {
+    content: "\f10d";
+}
+.icon-github-alt:before {
+    content: "\f113";
+}
+.icon-rss:before {
+    content: "\f143";
+}
+.icon-email:before {
+    content: "\f199";
+}
+.icon-toggle-off:before {
+    content: "\f204";
+}
+.icon-toggle-on:before {
+    content: "\f205";
+}
+.icon-search:before {
+    content: "\f002";
+}

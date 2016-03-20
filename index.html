@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="/css/main.css" />
+</head>
+
+<body>
+    <nav class="nav">
+        <ul class="page-nav">
+            <li>
+                <a href="#@blogs" rel="Blogs" class="icon icon-nav icon-home"></a>
+            </li>
+        </ul>
+        <ul class="preference">
+            <li>
+                <div id="fullscreen-btn" class="icon nav-btn icon-fullscreen"></div>
+            </li>
+            <!--<li>
+                <button id="setting-btn" class="icon nav-btn icon-setting"></button>
+            </li>-->
+        </ul>
+        <div class="setting-panel">
+            <ul class="theme-list">
+                <h3 class="setting-title">Theme Color</h3>
+                <li class="theme theme-default">Default
+                    <div class="toggle">
+                        <div class="toggle-handle"></div>
+                    </div>
+                </li>
+                <li class="theme theme-gray">Gray
+                    <div class="toggle">
+                        <div class="toggle-handle"></div>
+                    </div>
+                </li>
+                <li class="theme theme-pink">Pink
+                    <div class="toggle">
+                        <div class="toggle-handle"></div>
+                    </div>
+                </li>
+                <li class="theme theme-night">Night Mode
+                    <div class="toggle">
+                        <div class="toggle-handle"></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="main">
+        <div class="primary">
+            <div class="primary-inner">
+                <div class="page-container">
+                    <div data-pagenum="0" class="page-item active" id="post-list-container">
+                        <ul class="post-list"></ul>
+                    </div>
+                </div>
+                <div class="post-container"></div>
+            </div>
+            <div class="icon icon-top" id="pop-btn"></div>
+        </div>
+        <div class="secondary">
+            <div class="secondary-inner">
+                <div class="search">
+                    <input type="text" placeholder="Search..." class="searchbox" />
+                    <ul class="result"></ul>
+                </div>
+                <div class="category">
+                    <h4>CATEGORIES</h4>
+                    <ul class="cate-list"></ul>
+                </div>
+                <div class="stay-bottom">
+                    <div class="contact">
+                        <h4>CONTACT</h4>
+                        <ul class="contact-list"></ul>
+                    </div>
+                    <div class="copyright"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="/js/index.js"></script>
+</body>
+
+</html>

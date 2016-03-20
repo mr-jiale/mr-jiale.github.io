@@ -1,0 +1,9 @@
+[{% for category in site.categories %}
+    {
+        "category"  :"{{ category | first }}",
+        "count"     :"{{ category | last | size }}",
+        "posts"     :[{% for posts in category offset:1 %}{% for post in posts %}
+            {"title":"{{ post.title }}","url":"{{ post.url }}","date":"{{ post.date | date_to_long_string}}"}{% unless forloop.last %},{% endunless %}    
+        {% endfor %}{% endfor %}]
+    }{% unless forloop.last %},{% endunless %}
+{% endfor %}]

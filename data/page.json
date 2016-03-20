@@ -1,0 +1,9 @@
+---
+---
+[{% for page in site.pages %}
+    {
+        "title" :"{{ page.title }}",
+        "icon"  :"{{ page.icon }}",
+        "url"   :"{{ page.url }}"
+    }{% unless forloop.last %},{% endunless %}
+{% endfor %}]
